@@ -1,0 +1,64 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+    min-height: 100vh;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    height: 60vh;
+    min-width: 400px;
+    max-width: 400px;
+}
+
+.display {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-break: break-all;
+    color:white;
+    width: 100%;
+    height: 20%;
+    max-height: min-content;
+    background-color: rgba(25, 25, 30, 0.130);
+    text-align: right;
+    padding: 5px 5px 5px 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.mathSign {
+    font-size: 30px;
+    color:white
+}
+
+.currentNumber{
+    font-size: 28px;
+    color:white;
+}
+
+
+.buttons {
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    height: 80%;
+    gap: 2px;
+}
+
+button {
+    font-size: 24px;
+}
+
+button:hover {
+    cursor: pointer;
+    scale: 1.03;
+}
+
